@@ -5,53 +5,46 @@ body{
 
 /* header part css start from here */
 
-.login-button{
-    margin-left: 1700px;
-    padding-top: 50px;
+header{
+    background-color: #2d25a0;
+    padding: 50px;
+    margin-bottom: 70px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     }
-.button{
-    color: #ffffff;
-    background-color: #E02C6D;
-    padding: 10px 20px;
-}
-.login-button i{
-    margin-right: 10px;
-}
-.header-part{
-    background-color:#2d25a0;
-    margin-bottom: 50px;
-}
-.text-and-image{
-    display: flex;
-}
-.text, .header-image{
-    width: 50%;
-    margin-left: 200px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    justify-items: center;
-}
+
 .slogan-text{
     font-size: 64px;
     color: #ffffff;
 }
 .header-image img{
-    width: 556px;
-    height: 438px;
+    width: 555px;
+    height: 440px;
+}
+
+/* all button of this section bellow */
+
+.login-button i{
+    margin-right: 10px;
 }
 .button-watch-live span{
     color: #ffffff;
     background-color: #E02C6D;
     padding: 10px 20px;
 }
+
+.login-button{
+    float: right;
+
+}
+
 .button-watch-live i{
     margin-left: 10px;
 }
 
-.login-button :hover{
-    background-color: darkorange;
-    border-radius: 25px;
-}
 .button-watch-live :hover{
     background-color: darkorange;
     border-radius: 25px;  
@@ -63,25 +56,19 @@ body{
 /* photo gallaery part css start from here */
 
 
-main{
+article{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.container{
-    width: 1050px;
-    padding: 50px;
-    margin-right: 40px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap:0px;
+    grid-column-gap:30px;
 }
 .player{
-    box-shadow: 1px 1px 1px 1px grey;
-    margin-left: 30px;
+    box-shadow: 0.50px 0.50px 0.50px 0.90px grey;
     padding: px;
     padding: 15px;
 }
@@ -116,3 +103,36 @@ main{
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+/* media quarey start from here */
+
+@media only screen and (max-width:688px) {
+
+   
+    header{
+        width:fit-content;
+    }
+    .players, #grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .slogan-text{
+        font-size: 36px;
+    }
+    .header-image img{
+        width: 247px;
+        height: 195px;
+        margin-top: 50px;
+    }
+    .footer-image img{
+        width: 240px;
+        height: 55px;
+    }
+    .footer-social-icons i{
+        font-size: 14px;
+    }
+    
+    .copyright-item-text{
+        font-size: 12px;
+    }   
+}
+/* media query end here */
