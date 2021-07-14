@@ -10,6 +10,10 @@ header{
     padding: 50px;
     margin-bottom: 70px;
 }
+.header-part{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 #grid{
     display: grid;
@@ -111,7 +115,7 @@ article{
 
    
     header{
-        width:fit-content;
+        width: fit-content;
     }
     .players, #grid{
         grid-template-columns: repeat(1, 1fr);
