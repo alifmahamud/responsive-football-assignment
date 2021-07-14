@@ -1,6 +1,68 @@
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0%;
 }
+
+/* header part css start from here */
+
+.login-button{
+    margin-left: 1700px;
+    padding-top: 50px;
+    }
+.button{
+    color: #ffffff;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+}
+.login-button i{
+    margin-right: 10px;
+}
+.header-part{
+    background-color:#2d25a0;
+    margin-bottom: 50px;
+}
+.text-and-image{
+    display: flex;
+}
+.text, .header-image{
+    width: 50%;
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    justify-items: center;
+}
+.slogan-text{
+    font-size: 64px;
+    color: #ffffff;
+}
+.header-image img{
+    width: 556px;
+    height: 438px;
+}
+.button-watch-live span{
+    color: #ffffff;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+}
+.button-watch-live i{
+    margin-left: 10px;
+}
+
+.login-button :hover{
+    background-color: darkorange;
+    border-radius: 25px;
+}
+.button-watch-live :hover{
+    background-color: darkorange;
+    border-radius: 25px;  
+}
+
+
+/* header part css end here */
+
+/* photo gallaery part css start from here */
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -18,7 +80,7 @@ main{
     grid-column-gap:0px;
 }
 .player{
-    box-shadow: 2px 2px 2px 2px grey;
+    box-shadow: 1px 1px 1px 1px grey;
     margin-left: 30px;
     padding: px;
     padding: 15px;
@@ -29,4 +91,28 @@ main{
 }
 .player-name{
     font-size: 28px;
+}
+
+/* photo gallaery part css end here */
+
+
+.footer-image img{
+    width: 485px;
+    height: 110px;
+}
+.footer-social-icons i{
+    color: grey;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.copyright-item-text {
+    font-size: 18px;
+}
+.copyright-item-text i{
+    margin: 5px;
+}
+.footer-items{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
